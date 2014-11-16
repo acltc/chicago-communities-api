@@ -1,3 +1,3 @@
 class VacantProperty < ActiveRecord::Base
-	belongs to :community
+	belongs_to :community
 end

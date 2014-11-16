@@ -1,0 +1,2 @@
+json.community_area community.community_area
+json.community_area_name community.comunity_area_name
