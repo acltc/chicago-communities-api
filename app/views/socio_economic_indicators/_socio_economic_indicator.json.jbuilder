@@ -1,1 +1,1 @@
-json.(socio_economic_indicators, :community_area, :community_area_name, :percent_of_housing_crowded, :percent_households_below_poverty, :percent_over_16_unemployed, :percent_over_25_without_HS_diploma, :percent_under_18_over_64, :per_capita_income, :hardship_index)
+json.(socio_economic_indicator, :community_area, :community_area_name, :percent_of_housing_crowded, :percent_households_below_poverty, :percent_over_16_unemployed, :percent_over_25_without_HS_diploma, :percent_under_18_over_64, :per_capita_income, :hardship_index)
