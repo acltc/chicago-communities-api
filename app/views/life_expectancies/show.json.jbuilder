@@ -1,0 +1,1 @@
+json.partial! @life_expectancy, partial: 'life_expectancy', as: :life_expectancy
