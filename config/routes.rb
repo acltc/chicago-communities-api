@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :life_expectancies
-
-
-
   resources :communities
   resources :socio_economic_indicators
   resources :vacant_properties
