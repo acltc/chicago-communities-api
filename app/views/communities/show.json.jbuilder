@@ -1,0 +1,1 @@
+json.partial! @community, partial: 'community', as: :community

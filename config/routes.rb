@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :communities
   resources :socio_economic_indicators
+  resources :vacant_properties
+  resources :life_expectancies
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
