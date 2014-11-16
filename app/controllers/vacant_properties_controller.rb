@@ -1,10 +1,10 @@
 class VacantPropertiesController < ApplicationController
 
 def index
-	@vacant_properties = Vacant_property.all
+	@vacant_properties = VacantProperty.all
 end
 
 def show
-	@vacant_properties = Vacant_property.find_by(id: params[:id])
+	@vacant_properties = VacantProperty.find_by(id: params[:id])
 end
 end
