@@ -1,0 +1,1 @@
+json.partial! @vacant_property, partial: 'vacant_property', as: :vacant_property
