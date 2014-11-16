@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116173703) do
+ActiveRecord::Schema.define(version: 20141116180429) do
 
   create_table "communities", force: true do |t|
     t.integer  "community_area"
@@ -51,11 +51,10 @@ ActiveRecord::Schema.define(version: 20141116173703) do
   end
 
   create_table "vacant_properties", force: true do |t|
-    t.integer  "community_id"
-    t.string   "community_area"
+    t.integer  "community_area"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "number_of_vacant_property"
+    t.integer  "number_of_vacant_properties"
   end
 
 end
