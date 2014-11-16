@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :life_expectancies
+
 
 
   resources :communities
