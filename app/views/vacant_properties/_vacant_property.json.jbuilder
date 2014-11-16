@@ -1,5 +1,6 @@
-json.community_name vacant_property.community_name
-json.number_of_vacant_property vacant_property.number_of_vacant_property
+json.community_area vacant_property.community_area
+json.community_area_name vacant_property.community.community_area_name
+json.number_of_vacant_property vacant_property.number_of_vacant_properties
 
-json.(vacant_property, :community_name, :number_of_vacant_property)
+
 
