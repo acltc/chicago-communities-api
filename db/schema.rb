@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116163044) do
+ActiveRecord::Schema.define(version: 20141116165339) do
+
+  create_table "communities", force: true do |t|
+    t.integer  "community_area"
+    t.string   "community_area_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "life_expectancies", force: true do |t|
+    t.integer  "community_area"
+    t.string   "community_area_name"
+    t.decimal  "life_expectancy_1990", precision: 10, scale: 0
+    t.decimal  "lower_95_ci_1990",     precision: 10, scale: 0
+    t.decimal  "upper_95_ci_1990",     precision: 10, scale: 0
+    t.decimal  "life_expectancy_2000", precision: 10, scale: 0
+    t.decimal  "lower_95_ci_2000",     precision: 10, scale: 0
+    t.decimal  "upper_95_ci_2000",     precision: 10, scale: 0
+    t.decimal  "life_expectancy_2010", precision: 10, scale: 0
+    t.decimal  "lower_95_ci_2010",     precision: 10, scale: 0
+    t.decimal  "upper_95_ci_2010",     precision: 10, scale: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "socio_economic_indicators", force: true do |t|
     t.integer  "community_area"
@@ -23,6 +46,13 @@ ActiveRecord::Schema.define(version: 20141116163044) do
     t.decimal  "percent_under_18_over_64",           precision: 10, scale: 0
     t.integer  "per_capita_income"
     t.integer  "hardship_index"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vacant_properties", force: true do |t|
+    t.integer  "community_id"
+    t.string   "community_area"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
