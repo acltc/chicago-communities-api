@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116161535) do
+ActiveRecord::Schema.define(version: 20141116173703) do
 
   create_table "vacant_properties", force: true do |t|
     t.integer  "community_id"
     t.string   "community_area"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "number_of_vacant_property"
   end
 
 end
