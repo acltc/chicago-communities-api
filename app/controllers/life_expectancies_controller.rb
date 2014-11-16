@@ -1,7 +1,8 @@
 class LifeExpectanciesController < ApplicationController
 
+
   def index
-    LifeExpectancy.all
+      @life_expectancies = LifeExpectancy.all
   end
 
   def show
