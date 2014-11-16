@@ -1,0 +1,1 @@
+json.array! @vacant_properties, partial: 'vacant_property', as: :vacant_property
