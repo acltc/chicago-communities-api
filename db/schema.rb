@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116180429) do
+ActiveRecord::Schema.define(version: 20141116194042) do
 
   create_table "communities", force: true do |t|
     t.integer  "community_area"
@@ -24,14 +24,8 @@ ActiveRecord::Schema.define(version: 20141116180429) do
     t.integer  "community_area"
     t.string   "community_area_name"
     t.decimal  "life_expectancy_1990", precision: 10, scale: 0
-    t.decimal  "lower_95_ci_1990",     precision: 10, scale: 0
-    t.decimal  "upper_95_ci_1990",     precision: 10, scale: 0
     t.decimal  "life_expectancy_2000", precision: 10, scale: 0
-    t.decimal  "lower_95_ci_2000",     precision: 10, scale: 0
-    t.decimal  "upper_95_ci_2000",     precision: 10, scale: 0
     t.decimal  "life_expectancy_2010", precision: 10, scale: 0
-    t.decimal  "lower_95_ci_2010",     precision: 10, scale: 0
-    t.decimal  "upper_95_ci_2010",     precision: 10, scale: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
