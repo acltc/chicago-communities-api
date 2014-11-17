@@ -37,6 +37,11 @@ if community.socio_economic_indicators.any?
 	json.hardship_index community.socio_economic_indicators.first.hardship_index  
 end
 
+if community.life_expectancies.any?
+  json.life_expectancy_1990 community.life_expectancies.first.life_expectancy_1990
+  json.life_expectancy_2000 community.life_expectancies.first.life_expectancy_2000
+  json.life_expectancy_2010 community.life_expectancies.first.life_expectancy_2010
+end
 
 
 
